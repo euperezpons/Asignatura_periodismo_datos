@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+author: "Eugenia Pérez Pons"
+date: "11/28/2019"
+output: pdf_document
+---
+
+```{r datos, echo=TRUE}
+datos1<-read.csv("Tecnología (RESPUESTAS) - Respuestas de formulario 1.csv", sep = "," ,header = TRUE)
+head(datos1)
+```
+
+```{r valoresnumericos, echo=TRUE}
+#cáclculos para realizar el ejercicio
+boxplot(datos1$X.Cómo.puntuarías.tu.nivel.de.inteligencia.emocional.,main="Box plot")
+```
